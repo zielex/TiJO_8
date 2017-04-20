@@ -1,15 +1,13 @@
 function getDescendingNumbers(start, stop)
 {
-    if (typeof start !== 'number' ||
-            typeof stop !== 'number' ||
-            start <= stop) {
+    if (typeof start !== 'number' || typeof stop !== 'number' || start <= stop) {
         return false;
     }
-    var descendingNumbers = start;
+    var result = start;
     for (var i = start - 1; i >= stop; i--) {
-        descendingNumbers = descendingNumbers + ' ' + i;
+        result = result + ' ' + i;
     }
-    return descendingNumbers;
+    return result;
 }
 
 module.exports = {
